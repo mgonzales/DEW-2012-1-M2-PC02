@@ -13,3 +13,14 @@
 //= require jquery
 require jquery_ujs
 //= require_tree .
+
+$(function(){
+ $('#sf')
+  .live('ajax:before', function(){
+   $("#progress").css('display', 'inline'); $('#photos').slideUp('slow');
+  })
+  .live('ajax:complete', function(){
+   $("#progress").css('display', 'none');	
+  });
+   $("#tags").focus();
+})
