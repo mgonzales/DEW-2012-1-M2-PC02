@@ -3,8 +3,8 @@
 	<% form_tag(:search, :remote=>true, :id=>"sf") do %>
 		<label for="tags">Tags:</label>
 		<%= text_field_tag 'tags' %>
-		<%= submit_tag "Buscar", :name=> "submit", :disable_with=>"May" %>
-		
+		<%= submit_tag "Buscar", :name=> "submit", :disable_with=>"***" %>
+		<div id="progress"><%= image_tag "progress_bar,gif" %></div>
 		<div id="photos" />
 	<% end %>
 </div>

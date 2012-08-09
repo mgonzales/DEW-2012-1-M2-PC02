@@ -9,8 +9,14 @@ body {
 	padding: 25px;
 }	
 #photos img{
-border: 1px soild #000;
-width: 75px;
-height: 75px;
-margin: 5px;
+	border: 1px soild #000;
+	width: 75px;
+	height: 75px;
+	margin: 5px;
+}
+#progress{
+	border: none;
+	position: relative;
+	float: right;
+	display: none;
 }
